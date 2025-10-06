@@ -63,7 +63,7 @@ export const slideIn = ({ direction, type, delay, duration }: SlideInProps): Var
     x: 0,
     y: 0,
     transition: {
-      type,
+      type: 'spring',
       delay,
       duration,
       ease: 'easeOut',
@@ -115,7 +115,7 @@ export const textVariant2: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      type: 'tween',
+      type: 'spring',
       ease: 'easeIn',
     },
   },
@@ -132,7 +132,7 @@ export const fadeIn = ({ direction, type, delay, duration }: FadeInProps): Varia
     y: 0,
     opacity: 1,
     transition: {
-      type,
+      type: 'spring',
       delay,
       duration,
       ease: 'easeOut',
@@ -165,7 +165,7 @@ export const zoomIn = ({ delay, duration }: ZoomInProps): Variants => ({
     scale: 1,
     opacity: 1,
     transition: {
-      type: 'tween',
+      type: 'spring',
       delay,
       duration,
       ease: 'easeOut',
